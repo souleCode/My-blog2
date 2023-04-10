@@ -1,0 +1,47 @@
+
+
+  
+   {% extends 'base.html' %}
+
+   {% block content %}
+         <div class="container ">
+     {% if query %}
+                <h1> Posts containing "{{ query }}"</h1>
+                <h3>
+                    {% with results.count as total_results  %} 
+                    
+                    Found {{total_results}} result {{total_results|pluralize}}
+                    {% endwith %}
+                </h3>
+            </div>
+        {% for post in results %}
+            <div class="d-flex">
+                    <!-- Blog post-->
+                <div class="card mb-4 col-md-6">
+                    {% comment %} <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a> {% endcomment %}
+                    <div class="card-body">
+                        <div class="small text-muted"> {{ post.publish }} </div>
+                        <h2 class="card-title h4"> {{ post.title }} </h2>
+                        <p class="card-text"> {{ post.body|truncatechars:50 }} </p>
+                        {% comment %} <a class="btn btn-primary" href="{% url 'post_detail' post.slug %}">Read more →</a> on remplace cette ligne par la suivante pour utiliser la methode get_abslute_url defini pour personnaliser les urls {% endcomment %}
+                        <a class="btn btn-primary" href="{{ post.get_absolute_url}}">Read more →</a> 
+                    </div>
+                </div>
+            </div>
+                {% empty %}
+                    <p> There are no results for your query.<p/>
+            </div>
+       {% endfor %}  
+    </div>  
+    <div class="mb-4">
+             <p><a href="{% url 'post_search' %}">Search again</a></p>
+    </div>
+    {% else %}
+     <h1>Search for posts </h1>
+        <form action="" method="get">
+            {{search_form}}
+            <input type="submit" value="Search">
+        </form>
+ {% endif %}
+</div>
+ {% endblock content %}

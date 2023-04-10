@@ -1,0 +1,166 @@
+[
+{
+  "model": "posts.category",
+  "pk": 1,
+  "fields": {
+    "name": "PYTHON",
+    "slug": "python"
+  }
+},
+{
+  "model": "posts.category",
+  "pk": 2,
+  "fields": {
+    "name": "PHP",
+    "slug": "php"
+  }
+},
+{
+  "model": "posts.category",
+  "pk": 3,
+  "fields": {
+    "name": "CSS",
+    "slug": "css"
+  }
+},
+{
+  "model": "posts.category",
+  "pk": 4,
+  "fields": {
+    "name": "JavaScripts",
+    "slug": "javascripts"
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 1,
+  "fields": {
+    "title": "Framwork  Django",
+    "slug": "framwork-django",
+    "body": "Unformation complete en dango",
+    "updated": "2023-04-08T00:10:13.671Z",
+    "created": "2023-04-08T00:10:13.671Z",
+    "status": "draft",
+    "publish": "2023-04-07T18:27:28Z",
+    "author": 1,
+    "category": 1
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 2,
+  "fields": { 
+    "title": "framwork NodeJS",
+    "slug": "framwork-nodejs",
+    "body": "Une formation en NodeJs",
+    "updated": "2023-04-08T00:10:21.453Z",
+    "created": "2023-04-08T00:10:21.453Z",
+    "status": "published",
+    "publish": "2023-04-07T18:28:14Z",
+    "author": 1,
+    "category": 4
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 3,
+  "fields": {
+    "title": "framwork laravel",
+    "slug": "framwork-laravel",
+    "body": "une formation dediee au debut en Laravel",
+    "updated": "2023-04-07T23:11:23.872Z",
+    "created": "2023-04-07T23:11:23.872Z",
+    "status": "draft",
+    "publish": "2023-04-07T18:29:00Z",
+    "author": 1,
+    "category": 2
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 4,
+  "fields": {
+    "title": "Boostrap5",
+    "slug": "boostrap5",
+    "body": "Une formation complete en Bostrap5",
+    "updated": "2023-04-07T23:18:05.959Z",
+    "created": "2023-04-07T23:18:05.959Z",
+    "status": "published",
+    "publish": "2023-04-07T18:29:43Z",
+    "author": 1,
+    "category": 3
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 5,
+  "fields": {
+    "title": "Framwork Flask",
+    "slug": "framwork-flask",
+    "body": "Une formation du framwork flask",
+    "updated": "2023-04-08T00:10:35.212Z",
+    "created": "2023-04-08T00:10:35.212Z",
+    "status": "draft",
+    "publish": "2023-04-07T22:46:10Z",
+    "author": 1,
+    "category": 1
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 6,
+  "fields": {
+    "title": "Tktinter",
+    "slug": "tktinter",
+    "body": "la concption des interfaces garphique avec le framwork Tk",
+    "updated": "2023-04-07T23:12:31.101Z",
+    "created": "2023-04-07T23:12:31.101Z",
+    "status": "draft",
+    "publish": "2023-04-07T22:46:58Z",
+    "author": 1,
+    "category": 1
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 7,
+  "fields": {
+    "title": "Talwind",
+    "slug": "talwind",
+    "body": "Vous voulez apprendre a bien styliser vos pages ,alors nous sommes la pour vous",
+    "updated": "2023-04-08T00:09:09.442Z",
+    "created": "2023-04-08T00:09:09.442Z",
+    "status": "published",
+    "publish": "2023-04-07T22:47:45Z",
+    "author": 1,
+    "category": 3
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 8,
+  "fields": {
+    "title": "Symfony",
+    "slug": "symfony",
+    "body": "Tu veux booster ta carrriere de Dev Full Stack? c'est ici cela se passe",
+    "updated": "2023-04-07T23:20:08.069Z",
+    "created": "2023-04-07T23:20:08.069Z",
+    "status": "published",
+    "publish": "2023-04-07T23:18:30Z",
+    "author": 1,
+    "category": 2
+  }
+},
+{
+  "model": "posts.comment",
+  "pk": 7,
+  "fields": {
+    "post": 2,
+    "username": "traore",
+    "email": "souleonetraore.940@gmail.com",
+    "body": "just un commentaire",
+    "created": "2023-04-07T22:07:34.630Z",
+    "updated": "2023-04-07T22:07:34.630Z"
+  }
+}
+]
